@@ -33,19 +33,19 @@
 
         default_layer {
             bindings = <
-            &hm GRAVE Q &hm N1 W    &hm N2 E         &hm N3 R     &hm N5 T           &hm N6 Y     &hm N7 U           &hm N8 I    &hm N9 O    &hm N0 P
-            &kp A       &hm LCTRL S &hm LALT D       &hm LCMD F   &kp G              &kp H        &hm RGUI J         &hm RALT K  &hm RCTRL L &hm DQT QUOT
-            &kp Z       &kp X       &kp C            &kp V        &kp B              &kp N        &kp M              &kp COMMA   &kp DOT     &kp FSLH
-                                    &lt NAVLAYER TAB &kp LCMD    &kp ENTER           &kp RSHIFT   &lt NUMLAYER SPACE &lt SYMLAYER BSPC
+            &hm N1 Q    &hm N2 W    &hm N3 E         &hm N4 R       &hm N5 T           &hm N6 Y     &hm N7 U           &hm N8 I    &hm N9 O    &hm N0 P
+            &kp A       &hm LCTRL S &hm LALT D       &hm LCMD F     &kp G              &kp H        &hm RGUI J         &hm RALT K  &hm RCTRL L &hm DQT QUOT
+            &kp Z       &kp X       &kp C            &kp V          &kp B              &kp N        &kp M              &kp COMMA   &kp DOT     &kp FSLH
+                                    &lt NAVLAYER TAB &hm LCMD SPACE &kp ENTER          &kp RSHIFT   &lt NUMLAYER SPACE &lt SYMLAYER BSPC
             >;
         };
 
         nav_layer {
             bindings = <
-            &trans     &trans     &trans   &bt BT_SEL 0   &bt BT_SEL 3            &trans     &trans         &kp UP      &trans     &kp DEL
-            &trans     &trans     &trans   &bt BT_SEL 1   &bt BT_SEL 4            &trans     &kp LEFT       &kp DOWN    &kp RIGHT  &kp HOME
-            &trans     &trans     &trans   &bt BT_SEL 2     &bt BT_CLR            &trans     &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
-                                  &trans   &trans           &trans                &trans     &kp ESC        &kp DEL        
+            &trans     &trans     &trans   &trans     &kp LCMD(RSHIFT(4))      &trans     &trans         &kp UP      &trans     &kp DEL
+            &trans     &trans     &trans   &trans     &kp LCMD(RSHIFT(5))      &trans     &kp LEFT       &kp DOWN    &kp RIGHT  &kp HOME
+            &trans     &trans     &trans   &trans     &trans                   &trans     &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
+                                  &trans   &trans     &trans                   &trans     &kp ESC        &kp DEL        
             >;
         };
 
@@ -60,10 +60,10 @@
 
         num_layer {
             bindings = <
-            &kp LBKT   &kp N7     &kp N8      &kp N9     &kp RBKT           &trans     &trans     &trans      &trans     &trans
-            &kp SEMI   &kp N4     &kp N5      &kp N6     &kp EQUAL          &trans     &trans     &trans      &trans     &trans
-            &kp GRAVE  &kp N1     &kp N2      &kp N3     &kp BSLH           &trans     &trans     &trans      &trans     &trans
-                                  &trans      &kp N0     &kp MINUS          &trans     &trans     &trans 
+            &kp LBKT   &kp N7     &kp N8      &kp N9     &kp RBKT           &trans    &trans     &trans      &bt BT_SEL 0   &bt BT_SEL 3   
+            &kp SEMI   &kp N4     &kp N5      &kp N6     &kp EQUAL          &trans    &trans     &trans      &bt BT_SEL 1   &bt BT_SEL 4 
+            &kp GRAVE  &kp N1     &kp N2      &kp N3     &kp BSLH           &trans    &trans     &trans      &bt BT_SEL 2   &bt BT_CLR
+                                  &trans      &kp N0     &kp MINUS          &trans    &trans     &trans 
             >;
         };
 
